@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js" defer></script>
+        <title>Basketball Scorecard</title>
+    </head>
+    <body>
+        <div class="layout">
+            <div class="flex">
+                <div class="panels">
+                    <h1>HOME</h1>
+                    <div class="score">
+                        <span id="home_score">0</span>
+                    </div>
+                    <div class="center">
+                        <button class="score_button" onclick="home_plus_one()">+1</button>
+                        <button class="score_button" onclick="home_plus_two()">+2</button>
+                        <button class="score_button" onclick="home_plus_three()">+3</button>
+                    </div><br>
+                    <div class="center">
+                        <span id="home_leader">&nbsp;</span>
+                    </div>
+                </div>
+                <div class="panels">
+                    <h1>GUEST</h1>
+                    <div class="score">
+                        <span id="guest_score">0</span>
+                    </div>
+                    <div class="center">
+                        <button class="score_button" onclick="guest_plus_one()">+1</button>
+                        <button class="score_button" onclick="guest_plus_two()">+2</button>
+                        <button class="score_button" onclick="guest_plus_three()">+3</button>
+                    </div><br>
+                    <div class="center">
+                        <span id="guest_leader">&nbsp;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <button class="newgame_button" onclick="newgame()">NEW GAME</button>
+            </div>
+        </div>      
+    </body>
+</html>
